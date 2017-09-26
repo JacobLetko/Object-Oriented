@@ -153,14 +153,14 @@ namespace sfw
 	// x1,y1,x2,y2	  : first and second position of the line.
 	// tint			  : hex color value
 	// transform	  : a 4x4 transformation matrix, applied as parent transform
-	void drawLine(float x1, float y1, float x2, float y2, unsigned tint = 0xffffffff, const float transform[16] = identity);
+	void drawLine(float x1, float y1, float x2, float y2, unsigned tint = WHITE, const float transform[16] = identity);
 
 	// verbose wrapper for drawLineMatrix
 	// x1,y1,x2,y2	  : first and second position of the line.
 	// tint			  : hex color value
 	// transform	  : a 3x3 transformation matrix, applied as parent transform
 	// Z              : a Z offset used to determine the draw order
-	void drawLine3(float x1, float y1, float x2, float y2, float z, unsigned tint, const float transform[9] = identity3);
+	void drawLine3(float x1, float y1, float x2, float y2, float z, unsigned tint = WHITE, const float transform[9] = identity3);
 
 	// uses drawLine to generate a circle
 	// x,y		: translation (position)
@@ -168,7 +168,7 @@ namespace sfw
 	// steps	: how smooth is the surface? Larger radii should use larger step sizes
 	// tint			  : hex color value
 	// transform	  : a 4x4 transformation matrix, applied as parent transform
-	void drawCircle(float x, float y, float radius, unsigned steps = 12, unsigned tint = 0xffffffff, const float transform[16] = identity);
+	void drawCircle(float x, float y, float radius, unsigned steps = 12, unsigned tint = WHITE, const float transform[16] = identity);
 
 	// used to initialize an openGL rendering context. USE THIS BEFORE ANYTHING ELSE!
 	// width, height	: Dimensions of window.
