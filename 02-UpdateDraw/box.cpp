@@ -6,8 +6,6 @@ void Box::draw()
 {
 	if (active == true)
 	{
-		
-		
 		sfw::drawLine(startX, startY,/**/ startX + length, startY);
 		sfw::drawLine(startX + length, startY,/**/ startX + length, startY + width);
 		sfw::drawLine(startX + length, startY + width,/**/ startX, startY + width);

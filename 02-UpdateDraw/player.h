@@ -1,11 +1,15 @@
 #pragma once
 
-class Player
+class player
 {
 public:
 	float x;
 	float y;
-	int two;
+
+	char up;
+	char down;
+	char left;
+	char right;
 
 	void update();
 	void draw();

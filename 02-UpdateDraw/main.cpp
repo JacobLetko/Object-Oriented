@@ -12,15 +12,17 @@ int main()
 	//background color
 	sfw::setBackgroundColor(BLACK);
 	
-	Player avatar;
+	player avatar;
 	avatar.x = 300;
 	avatar.y = 300;
-	avatar.two = 0;
+	avatar.up = 'W';
+	avatar.down = 'S';
+	avatar.left = 'A';
+	avatar.right = 'D';
 
-	Player me;
+	player me;
 	me.x = 100;
 	me.y = 100;
-	me.two = 1;
 
 	Box box;
 	box.length = 10;
@@ -34,8 +36,6 @@ int main()
 	{
 		avatar.update();
 		avatar.draw();
-		//me.draw();
-		//me.update();
 		std::cout << "x = " << avatar.x << "	y = " << avatar.y << std::endl;
 		//box.draw();
 	}
