@@ -8,20 +8,18 @@
 
 void points::update()
 {
-	if (time > 0)
-		time -= sfw::getDeltaTime();
+	if (Time > 0)
+		Time -= sfw::getDeltaTime();
 	else
-		time = 0;
+		Time = 0;
 }
 
 void points::draw()
 {
-	point = std::to_string(time);
+	point = std::to_string(Time);
 	clik = std::to_string(clicks);
 	const char * cha = point.c_str();
 	sfw::drawString(font, cha, 700, 30, 20, 20);
 	cha = clik.c_str();
-	sfw::drawString(font, cha, 750, 30, 20, 20);
-
-	
+	sfw::drawString(font, cha, 100, 30, 20, 20);
 }

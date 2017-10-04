@@ -121,6 +121,7 @@
     <ClCompile Include="player.cpp" />
     <ClCompile Include="playerTwo.cpp" />
     <ClCompile Include="points.cpp" />
+    <ClCompile Include="powerUps.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gameField.h" />
@@ -128,6 +129,7 @@
     <ClInclude Include="player.h" />
     <ClInclude Include="playerTwo.h" />
     <ClInclude Include="points.h" />
+    <ClInclude Include="powerUps.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

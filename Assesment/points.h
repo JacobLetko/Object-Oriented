@@ -4,7 +4,7 @@
 class points
 {
 public:
-	float time;
+	float Time;
 	std::string point;
 	std::string clik;
 	int font;

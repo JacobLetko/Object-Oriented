@@ -6,8 +6,9 @@ void mouse::update()
 		sfw::getMouseX() > cxDown &&
 		sfw::getMouseY() < cyRight &&
 		sfw::getMouseY() > cyLeft &&
-		sfw::getKey(MOUSE_BUTTON_LEFT))
+		sfw::getMouseButton(MOUSE_BUTTON_LEFT))
 	{
+		
 		click++;
 	}
 

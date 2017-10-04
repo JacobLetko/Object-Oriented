@@ -4,13 +4,13 @@
 void avatar::update()
 {
 	if (sfw::getKey(up))
-		y += 5;
+		y += speed;
 	if (sfw::getKey(down))
-		y -= 5;
+		y -= speed;
 	if (sfw::getKey(right))
-		x += 5;
+		x += speed;
 	if (sfw::getKey(left))
-		x -= 5;
+		x -= speed;
 
 	if (x > 1300)
 		x = 1300;
