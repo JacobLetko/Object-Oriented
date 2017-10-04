@@ -12,7 +12,7 @@ void powerUp::update()
 		sfw::getMouseY() > y - raid &&
 		sfw::getMouseButton(MOUSE_BUTTON_LEFT))
 	{
-		boost = 5;
+		boost = 1;
 		item = true;
 	}
 }

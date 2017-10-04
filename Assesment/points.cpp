@@ -17,9 +17,10 @@ void points::update()
 void points::draw()
 {
 	point = std::to_string(Time);
-	clik = std::to_string(clicks);
 	const char * cha = point.c_str();
 	sfw::drawString(font, cha, 700, 30, 20, 20);
+
+	clik = std::to_string(clicks);
 	cha = clik.c_str();
 	sfw::drawString(font, cha, 100, 30, 20, 20);
 }

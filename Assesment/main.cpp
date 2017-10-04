@@ -90,6 +90,8 @@ int main()
 		Time.draw();
 		Time.update();
 
+		one.speed += .009;
+
 		if (Time.Time == 0)
 		{
 			one.enabled = false;

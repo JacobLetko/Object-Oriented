@@ -10,7 +10,7 @@ public:
 	char down;
 	char left;
 	char right;
-	int speed;
+	float speed;
 
 	virtual void update();
 };
